@@ -12,7 +12,7 @@ const OurClient = () => {
   const allLogos = [...clientLogos, ...clientLogos]; // Duplikat agar marquee bisa looping
 
   return (
-    <section id="6" className="w-full bg-[#E8FCFA] py-10 sm:py-14 md:py-16 px-4 p-8 pt-24 scroll-mt-24">
+    <section id="6" className="w-full bg-[#E8FCFA] py-16 sm:py-14 md:py-16 px-4 pt-24 scroll-mt-24">
       <div className="max-w-screen-xl mx-auto">
         {/* Judul */}
         <div className="text-center mb-6 sm:mb-8 md:mb-10">
@@ -32,7 +32,7 @@ const OurClient = () => {
                 className="h-12 sm:h-14 md:h-16 object-contain"
               />
             ))}
-          </div>
+          </div> 
         </div>
       </div>
     </section>

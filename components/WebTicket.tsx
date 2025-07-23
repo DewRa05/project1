@@ -43,7 +43,7 @@ const WebTiketing = () => {
   return (
     <section
       id="5"
-      className="bg-white py-16 px-4 mx-4 md:-min-h-screen lg:justify-center lg:items-center md:overflow-hidden sm:overflow-x-hidden pt-24 scroll-mt-24"
+      className="bg-white py-16 px-4 mx-4 lg:min-h-screen lg:justify-center lg:items-center md:overflow-hidden sm:overflow-x-hidden pt-24 scroll-mt-24"
     >
       {/* Judul */}
       <h2 className="text-center text-[#01B3BF] text-[26px] sm:text-[30px] md:text-[36px] lg:text-[40px] font-bold mb-8">

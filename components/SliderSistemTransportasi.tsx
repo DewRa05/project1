@@ -19,9 +19,9 @@ const SliderSistemTransportasi = () => {
   return (
     <section
       id="3"
-      className="py-16 px-4 bg-white min-h-screen flex items-center justify-center"
+      className="py-16 px-4 p-8 bg-white lg:min-h-screen flex items-center justify-center"
     >
-      <div className="w-full max-w-screen-xl flex flex-col lg:flex-row items-center justify-between gap-10">
+      <div className="w-full max-w-screen-xl flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Kiri: Gambar & Badge */}
         <div className="relative w-full lg:w-1/2 flex flex-col items-center justify-center">
           {/* Badge kotak */}

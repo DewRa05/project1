@@ -19,7 +19,7 @@ const Hero = () => {
           />
 
           <h1
-            className="text-white text-[24px] md:text-[44px] lg:text-[52px] font-light leading-tight"
+            className="text-white text-[24px] md:text-[44px] lg:text-[52px] font-extralight leading-tight"
             style={{ fontFamily: "Gadugi, Segoe UI, sans-serif" }}
           >
             Sistem Transportasi

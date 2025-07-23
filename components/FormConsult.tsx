@@ -10,7 +10,7 @@ const FormConsult = () => {
   return (
     <section
       id="7"
-      className="flex flex-col min-h-screen lg:flex-row md:gap-x-10 gap-y-10 items-center justify-center bg-white px-4 sm:px-5 py-10 mx-2 sm:mx-4 pt-24"
+      className="flex flex-col lg:min-h-screen md:flex-row md:gap-x-10 gap-y-10 items-center justify-center bg-white px-4 sm:px-5 py-10 mx-2 sm:mx-4 pt-24"
     >
       {/* Kiri: Info box */}
       <div className="w-full lg:w-1/2 max-w-sm px-4 md:px-0 py-6 md:py-10">

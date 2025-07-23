@@ -87,7 +87,7 @@ const SliderTerlengkap = () => {
   return (
     <section
       id="4"
-      className="bg-white pt-20 pb-20 p-8 min-h-screen md:-min-h-screen overflow-hidden relative flex flex-col items-center scroll-mt-24"
+      className="bg-white pt-20 pb-20 p-8 lg:-min-h-screen overflow-hidden relative flex flex-col items-center scroll-mt-24"
     >
       {/* Judul */}
       <div className="w-full flex justify-center items-center mb-5">
