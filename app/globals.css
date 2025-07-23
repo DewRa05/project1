@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.marquee-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.marquee-track {
+    display: inline-flex;
+    width: max-content;
+    animation: marquee 100s linear infinite;
+    gap: 2.5rem;
+}
+
+.marquee-track img {
+    height: 4rem;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+ .card.active {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+
+@keyframes softbounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
