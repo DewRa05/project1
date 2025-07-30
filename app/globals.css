@@ -60,3 +60,78 @@ html {
     transform: translateY(-8px);
   }
 }
+
+/* Background laut dan langit */
+.hero-section {
+  background: linear-gradient(to bottom, #2F80ED 0%, #ffffff 80%);
+  position: relative;
+}
+
+/* Laut dan langit gambar jika pakai custom image */
+.bg-hero {
+  background-image: url('/img/hero/laut-dan-langit.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.9);
+}
+
+/* Kapal animasi dari kiri ke kanan */
+.kapal {
+  animation: kapalBerlayar 20s linear infinite;
+}
+
+@keyframes kapalBerlayar {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 120%;
+  }
+}
+
+/* Pesawat animasi dari kanan ke kiri */
+.pesawat {
+  animation: pesawatTerbang 25s linear infinite;
+}
+
+@keyframes pesawatTerbang {
+  0% {
+    right: -200px;
+    transform: rotate(0deg);
+  }
+  100% {
+    right: 120%;
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes ship-move {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+@keyframes plane-fly {
+  0% {
+    transform: translateX(-100%) translateY(0);
+  }
+  50% {
+    transform: translateX(50%) translateY(-20px);
+  }
+  100% {
+    transform: translateX(120%) translateY(0);
+  }
+}
+
+.animate-ship {
+  animation: ship-move 20s linear infinite;
+}
+
+.animate-plane {
+  animation: plane-fly 15s linear infinite;
+}
+
+

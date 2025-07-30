@@ -1,41 +1,43 @@
+"use client";
+
 import Image from "next/image";
+import "aos/dist/aos.css";
 
 const Hero = () => {
   return (
     <section
       id="1"
-      className="relative bg-[url('/img/hero/bg.png')] bg-cover bg-center min-h-screen flex items-center justify-center px-4"
+      className="relative h-screen w-full overflow-hidden bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage:
+          "url('/img/hero/ChatGPT Image Jul 24, 2025, 12_12_18 PM.png')",
+      }}
     >
-      <div className="absolute inset-0 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 bg-black/35 z-10" />
 
-      <div className="relative z-10 container mx-auto max-w-[1200px] text-center">
-        <div className="flex flex-col items-center justify-center gap-6">
+      <div className="relative z-20 text-white text-center flex flex-col items-center justify-center h-full gap-4 px-4">
+    
+        <div className="mb-4" data-aos="zoom" data-aos-delay="300">
           <Image
             src="/img/hero/logo.png"
-            alt="logo"
-            width={220}
-            height={110}
-            className="object-contain drop-shadow-lg"
+            alt="Logo Transportasi"
+            width={200}
+            height={200}
+            priority
           />
-
-          <h1
-            className="text-white text-[24px] md:text-[44px] lg:text-[52px] font-extralight leading-tight"
-            style={{ fontFamily: "Gadugi, Segoe UI, sans-serif" }}
-          >
-            Sistem Transportasi
-          </h1>
-
-          <p className="text-white text-[22px] md:text-[30px] lg:text-[36px] font-semibold leading-tight drop-shadow-sm">
-            Darat & Laut Terdepan di Indonesia
-          </p>
-
-          <a
-            href="#contact"
-            className="mt-4 bg-white text-[#01B3BF] hover:bg-[#0198A8] hover:text-white transition duration-300 px-8 py-3 rounded-xl font-semibold shadow-md"
-          >
-            Consult Now!
-          </a>
         </div>
+
+        <h1 className="text-4xl md:text-6xl font-bold drop-shadow-lg leading-tight" data-aos="fade-down" data-aos-delay="500">
+          Sistem Transportasi
+        </h1>
+
+        <p className="text-lg md:text-xl drop-shadow-md" data-aos="fade-in" data-aos-delay="800">
+          Darat & Laut Terdepan di Indonesia
+        </p>
+
+        <button className="mt-6 px-6 py-3 bg-white text-[#2F80ED] font-semibold rounded-full shadow-md hover:bg-blue-100 transition" data-aos="fade-up" data-aos-delay="1100">
+          Consult Now!
+        </button>
       </div>
     </section>
   );

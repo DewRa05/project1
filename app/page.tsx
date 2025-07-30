@@ -5,6 +5,7 @@ import SistemTransportasiDarat from "@/components/SistemTransportasiDarat";
 import SliderSistemTransportasi from "@/components/SliderSistemTransportasi";
 import SliderTerlengkap from "@/components/SliderTerlengkap";
 import WebTiketing from "@/components/WebTicket";
+import InteractiveTechnology from "@/components/InteractiveTechnology";
 
 export default function HomePage() {
   return (
@@ -13,11 +14,8 @@ export default function HomePage() {
       <SistemTransportasiDarat />
       <SliderSistemTransportasi />
       <SliderTerlengkap />
-      <section className="w-full lg:h-screen flex items-center justify-center">
-        <div className="w-full h-1/2 bg-[#E8FCFA] flex items-center justify-center">
-          <OurClient />
-        </div>
-      </section>
+      <InteractiveTechnology />
+      <OurClient />
       <WebTiketing />
       <FormConsult />
     </main>

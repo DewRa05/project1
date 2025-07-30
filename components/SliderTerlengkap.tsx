@@ -90,21 +90,21 @@ const SliderTerlengkap = () => {
       className="bg-white pt-20 pb-20 p-8 lg:-min-h-screen overflow-hidden relative flex flex-col items-center scroll-mt-24"
     >
       {/* Judul */}
-      <div className="w-full flex justify-center items-center mb-5">
+      <div className="w-full flex justify-center items-center mb-5" data-aos="fade-down">
         <h2 className="text-[#01B3BF] font-bold text-[35px] md:text-[42px] text-center px-4">
           Sistem Transportasi Terlengkap
         </h2>
       </div>
 
       {/* Konten */}
-      <div className="mx-5 flex flex-col md:flex-row items-center justify-between gap-0 w-full max-w-7xl">
+      <div className="mx-5 flex flex-col md:flex-row items-center justify-between gap-0 w-full max-w-7xl" data-aos="fade-up" data-aos-delay="200">
         {/* Kolom Kiri */}
-        <div className="flex flex-col justify-center items-center text-center px-4 sm:px-8 md:w-[500px]">
-          <p className="transition-all duration-300 ease-in-out text-[#01B3BF] text-[20px] font-bold mb-6 text-center sm:text-center md:text-left min-h-[64px]">
+        <div className="flex flex-col justify-center items-center text-center px-4 sm:px-8 md:w-[500px]" data-aos="fade-right">
+          <p className="transition-all duration-300 ease-in-out text-[#01B3BF] text-[20px] font-bold mb-6 text-center sm:text-center md:text-left min-h-[64px]" data-aos="fade-rigt" data-aos-delay="200">
             {cards[activeIndex].desc}
           </p>
 
-          <div className="h-48 min-h-[192px] flex items-center justify-center mb-4">
+          <div className="h-48 min-h-[192px] flex items-center justify-center mb-4" data-aos="zoom-in" data-aos-delay="400">
             <Image
               src={cards[activeIndex].img}
               alt={cards[activeIndex].title}
@@ -115,7 +115,7 @@ const SliderTerlengkap = () => {
           </div>
 
           {/* Tombol Scroll */}
-          <div className="flex gap-12 justify-center mt-4 leading-relaxed">
+          <div className="flex gap-12 justify-center mt-4 leading-relaxed" data-aos="fade-up" data-aos-delay="600">
             <button
               onClick={() => handleScrollButton(-1)}
               className="w-10 h-10 rounded-full border-2 border-[#16C7A0] text-[#16C7A0] bg-white flex items-center justify-center shadow"
@@ -159,20 +159,20 @@ const SliderTerlengkap = () => {
         </div>
 
         {/* Kolom Kanan */}
-        <div className="w-full lg:w-1/2 mt-10 lg:mt-0 relative md:w-1/2 leading-relaxed">
+        <div className="w-full lg:w-1/2 mt-10 lg:mt-0 relative md:w-1/2 leading-relaxed" data-aos="fade-left" data-aos-delay="300">
           {/* Background hijau */}
-          <div className="bg-[#16C7A0] h-[160px] w-full absolute top-0 left-0 right-0 z-0 ml-2 mt-8 overflow-hidden" />
+          <div className="bg-[#16C7A0] h-[160px] mr-0 w-full absolute mt-8 overflow-hidden" />
 
           {/* Cards */}
           <div
             ref={containerRef}
-            className="relative mt-[60px] z-10 flex gap-6 overflow-x-hidden scroll-smooth pb-4 pr-4 pl-4 pointer-events-auto ml-5"
+            className="relative mt-[60px] z-10 flex gap-6 overflow-x-hidden scroll-smooth pb-4 pr-4 pl-4 pointer-events-auto ml-5" data-aos="fade-up" data-aos-delay="500"
           >
             {cards.map((card, index) => (
               <div
                 key={index}
                 onClick={() => handleCardClick(index)}
-                className={`bg-white w-[150px] h-[200px] flex-shrink-0 flex flex-col items-center justify-center text-center px-3 py-4 shadow-sm transition-transform duration-300 ease-in-out hover:shadow-md hover:scale-[1.01] cursor-pointer ${
+                className={`bg-[#fff] w-[150px] h-[200px] flex-shrink-0 flex flex-col items-center justify-center text-center px-3 py-4 shadow-sm transition-transform duration-300 ease-in-out hover:shadow-md hover:scale-[1.01] cursor-pointer ${
                   activeIndex === index ? "scale-110 shadow-lg z-10" : ""
                 }`}
               >
@@ -195,7 +195,7 @@ const SliderTerlengkap = () => {
             ))}
           </div>
 
-          <p className="text-[18px] font-normal text-gray-600 mt-6 px-4">
+          <p className="text-[18px] font-normal text-[#000] mt-6 px-4" data-aos="fade-up" data-aos-delay="800">
             Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis
             Anda Me-Tech hadir memberikan solusi teknologi yang inovatif untuk
             bisnis Anda

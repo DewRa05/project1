@@ -1,38 +1,52 @@
-"use client";
 
 const OurClient = () => {
   const clientLogos = [
-    "9kita", "Aeroticket", "Alba", "Azkia", "Belibis", "BPTJ", "BRI_1", "bridge syari_1", "Cari ustadz", "ddi_1",
-    "Dunia Halal", "Faedah", "gomasgo", "Hot job", "HRD system", "KFC", "Kopkar", "Kosami", "MMBC", "My suzuki",
-    "Nushinushi travel", "Nushinushi", "Pacific travel", "Palapa Mall", "pasteur", "Payment", "Pro umkm",
-    "Puri yatim", "Rama Optik", "Real Travel", "RNI", "Spirit ebisnis", "Spirit tour", "Suzuki", "Syirkahmu",
-    "Wakuliner", "Warung dekat", "YAKESNA"
-  ];
-
-  const allLogos = [...clientLogos, ...clientLogos]; // Duplikat agar marquee bisa looping
+    "9kita",
+    "Aeroticket",
+    "Alba",
+    "Azkia",
+    "Belibis",
+  ]; // ✅ Hanya 5 logo
 
   return (
-    <section id="6" className="w-full bg-[#E8FCFA] py-16 sm:py-14 md:py-16 px-4 pt-24 scroll-mt-24">
-      <div className="max-w-screen-xl mx-auto">
-        {/* Judul */}
-        <div className="text-center mb-6 sm:mb-8 md:mb-10">
-          <h2 className="text-[#01B3BF] text-xl sm:text-2xl md:text-3xl font-semibold uppercase">
-            Our Clients
+    <section
+      id="6"
+      className="w-full bg-white flex flex-col justify-center items-center py-16 sm:py-20 md:py-24 lg:min-h-screen px-4"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      <div className="max-w-screen-lg w-full text-center">
+        {/* Judul dan Deskripsi */}
+        <div className="mb-12">
+          <p className="text-[#000] font-semibold uppercase text-sm mb-3 tracking-widest">
+            CLIENT METECH
+          </p>
+          <h2 className="text-[#01B3BF] text-3xl md:text-4xl font-extrabold leading-snug mb-5">
+            Mitra Terpercaya Metech
           </h2>
+          <p className="text-[#000] text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
+            Metech bangga menjadi mitra teknologi terpercaya bagi berbagai perusahaan 
+            dan organisasi. Kepercayaan ini memotivasi kami untuk terus menghadirkan 
+            solusi inovatif yang mendukung kesuksesan bisnis Anda.
+          </p>
         </div>
 
-        {/* Marquee */}
-        <div className="marquee-container overflow-hidden relative">
-          <div className="marquee-track flex animate-marquee gap-8">
-            {allLogos.map((logo, index) => (
+        {/* Logo Klien */}
+        <div className="flex justify-center items-center gap-6 sm:gap-8 flex-wrap">
+          {clientLogos.map((logo, index) => (
+            <div
+              key={index}
+              className="flex justify-center items-center bg-white border border-gray-200 p-5 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110 cursor-pointer w-[130px] h-[90px]"
+              data-aos="zoom-in"
+              data-aos-delay={index * 120}
+            >
               <img
-                key={index}
                 src={`/img/ourclient/${logo}.png`}
                 alt={`logo ${logo}`}
-                className="h-12 sm:h-14 md:h-16 object-contain"
+                className="h-14 md:h-24 object-contain"
               />
-            ))}
-          </div> 
+            </div>
+          ))}
         </div>
       </div>
     </section>

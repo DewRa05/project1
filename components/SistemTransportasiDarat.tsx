@@ -1,24 +1,42 @@
+"use client";
+
 import Image from "next/image";
+import "aos/dist/aos.css";
 
 const SistemTransportasiDarat = () => {
-    return (
-        <section className="bg-white relative flex flex-col md:flex-row z-[1] lg:min-h-screen shadow-[0_10px_10px_-5px_rgba(0,0,0,0.08)] justify-center items-center text-center md:text-left p-10 mx-5" id="2">
-            <div className="w-full p-8">
-                <h1 className="text-[#01B3BF] font-bold lg:text-[38px] md:text-[28px] text-[28px]">Sistem Transportasi  <br className="hidden md:block" /> Darat Terdepan di Indonesia!</h1>
-                <p className="text-[15px] lg:text-[20px] md:text-[15px] text-[#6B6B6B] mt-4">
-                    Me-Tech hadir memberikan solusi teknologi yang  <br className="hidden md:block" /> inovatif untuk bisnis Anda. </p>
-            </div>
-            <div className="w-full flex justify-center items-center">
-                <Image
-                    src="/img/intro/intro.png"
-                    alt="Sistem Transportasi Darat"
-                    width={600}
-                    height={400}
-                    className="w-full max-w-[450px] sm:max-w-[400px] md:max-w-[700px] h-auto"
-                />
-            </div>
-        </section>
-    )
-}; 
+  return (
+    <section
+      id="2"
+      className="relative flex h-screen items-center justify-center px-4 md:px-8 py-14 bg-white overflow-hidden"
+    >
+      <div className="max-w-6xl w-full flex flex-col lg:flex-row items-center gap-6">
+        <div
+          className="flex-1 text-center lg:text-left p-8 space-y-4"
+        >
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#01B3BF] leading-tight" data-aos="fade-left" data-aos-delay="100">
+            Sistem Transportasi <br className="hidden md:block"/>Darat Terdepan di Indonesia!
+          </h2>
+          <p className="text-[#000] text-lg sm:text-xl font-medium" data-aos="fade-left" data-aos-delay="300">
+            Solusi teknologi Me-Tech siap mendukung kelancaran bisnis Anda.
+          </p>
+        </div>
+
+        <div
+          className="flex-1 flex justify-center" data-aos="fade-up" data-aos-delay="500">
+          <div className="w-[300px] sm:w-[340px] md:w-[460px] lg:w-[500px]">
+            <Image
+              src="/img/intro/intro.png"
+              alt="Sistem Transportasi"
+              width={800}
+              height={600}
+              className="w-full h-auto object-contain drop-shadow-xl"
+              priority
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default SistemTransportasiDarat;

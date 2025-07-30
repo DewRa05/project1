@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import "aos/dist/aos.css";
 
 const images = ["/img/slider/laut.png", "/img/slider/car.png"];
 const labels = ["Laut", "Darat"];
@@ -12,66 +13,67 @@ const SliderSistemTransportasi = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
-    }, 3000);
+    }, 3500);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <section
       id="3"
-      className="py-16 px-4 p-8 bg-white lg:min-h-screen flex items-center justify-center"
+      className="py-16 px-4 md:px-10 bg-white min-h-screen flex items-center justify-center"
     >
-      <div className="w-full max-w-screen-xl flex flex-col md:flex-row items-center justify-between gap-10">
+      <div className="max-w-7xl w-full flex flex-col md:flex-row items-center gap-10">
         {/* Kiri: Gambar & Badge */}
-        <div className="relative w-full lg:w-1/2 flex flex-col items-center justify-center">
-          {/* Badge kotak */}
-          <div className="absolute top-0 left-0 md:left-4 bg-[#16C7A0] text-white font-semibold px-4 py-3 text-[16px] max-w-[200px] shadow-md rounded-md">
-            <div className="text-left leading-tight">
+        <div className="relative w-full md:w-1/2 flex flex-col items-center" data-aos="fade-right">
+          {/* Badge */}
+          <div className="absolute top-2 left-2 md:top-0 md:left-4 bg-[#16C7A0] text-white font-semibold px-5 py-3 text-sm md:text-base rounded-md shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+            <div className="leading-tight">
               Sistem <br />
               Transportasi <br />
               <div className="flex items-center mt-1">
-                <span>{labels[current]}</span>
-                <div className="h-[10px] w-[40px] bg-[#0070F3] ml-2"></div>
+                <span className="capitalize">{labels[current]}</span>
+                <div className="h-[10px] w-[40px] bg-[#0070F3] ml-2 rounded-sm"></div>
               </div>
             </div>
           </div>
 
           {/* Gambar Slider */}
-          <div className="mt-16 w-[300px] md:w-[360px] lg:w-[420px] aspect-[4/3] overflow-hidden">
+          <div className="mt-20 w-[300px] sm:w-[360px] md:w-[400px] lg:w-[450px] aspect-[4/3] overflow-hidden transition-all duration-500" data-aos="fade-up" data-aos-delay="400">
             <Image
               src={images[current]}
-              alt="Slider"
-              width={420}
+              alt={`Gambar ${labels[current]}`}
+              width={450}
               height={300}
-              className="w-full h-full object-contain transition-all duration-500"
+              className="w-full h-full object-contain transition duration-500 ease-in-out"
               priority
             />
           </div>
 
           {/* Dots */}
-          <div className="flex justify-center mt-4 space-x-2">
+          <div className="flex justify-center mt-5 gap-2" data-aos="fade-up" data-aos-delay="600">
             {images.map((_, index) => (
               <span
                 key={index}
-                className={`w-2.5 h-2.5 rounded-full inline-block transition duration-300 ${
+                className={`h-2.5 w-2.5 rounded-full ${
                   index === current ? "bg-[#01B3BF]" : "bg-gray-300"
-                }`}
+                } transition duration-300`}
               ></span>
             ))}
           </div>
         </div>
 
         {/* Kanan: Deskripsi */}
-        <div className="w-full lg:w-1/2 bg-[#E8FCFA] px-8 py-10 rounded-md shadow-sm">
-          <h3 className="text-[#01B3BF] mb-3 text-[20px] font-bold leading-snug text-left">
-            <span className="font-bold text-[38px]">Me-Tech</span>
-            <br />
+        <div className="w-full md:w-1/2 bg-[#E8FCFA] p-8 rounded-xl shadow-md text-left" data-aos="fade-left" data-aos-delay="500">
+          <h3 className="text-[#01B3BF] text-2xl md:text-3xl font-bold mb-4">
+            <span className="text-[32px] md:text-[38px] font-extrabold block text-[#01B3BF]" data-aos="fade-down" data-aos-delay="700">
+              Me-Tech
+            </span>
             Online Ticketing System
           </h3>
-          <p className="text-[#6B6B6B] text-[16px] leading-relaxed border-l-4 border-[#00b7d4] pl-3 text-left">
+          <p className="text-[#6B6B6B] text-base md:text-lg leading-relaxed border-l-4 border-[#00b7d4] pl-4" data-aos="fade-up" data-aos-delay="900">
             Online Ticketing System adalah sistem untuk meningkatkan
             produktivitas perusahaan transportasi, memudahkan operasional, dan
-            meningkatkan efisiensi.
+            meningkatkan efisiensi secara signifikan.
           </p>
         </div>
       </div>

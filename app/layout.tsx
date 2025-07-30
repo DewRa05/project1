@@ -7,20 +7,21 @@ import Footer from "@/components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const sectionOrder = ["1", "2", "3", "4", "5", "6", "7"]; // mulai dari 1
+const sectionOrder = ["1", "2", "3", "4", "5", "6", "7", "8"];
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
-  const [showButton, setShowButton] = useState(true); // tampil langsung dari awal
+  const [showButton, setShowButton] = useState(true);
+  const [isFooterVisible, setIsFooterVisible] = useState(false);
 
   useEffect(() => {
-    AOS.init({ duration: 1000, once:true });
+    AOS.init({ duration: 1000, once: true });
 
     const heroSection = document.getElementById("1");
     if (heroSection) {
       heroSection.scrollIntoView({ behavior: "auto" });
     }
-    
+
     const handleScroll = () => {
       let closestIndex = 0;
       let closestDistance = Infinity;
@@ -38,10 +39,25 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       });
 
       setCurrentSectionIndex(closestIndex);
-      setShowButton(true); // tombol tetap muncul sepanjang waktu
+      setShowButton(true);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
+
+    // Observasi footer agar tombol tidak menutupi
+    const footer = document.querySelector("footer");
+    if (footer) {
+      const observer = new IntersectionObserver(
+        (entries) => setIsFooterVisible(entries[0].isIntersecting),
+        { threshold: 0.1 }
+      );
+      observer.observe(footer);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+        observer.disconnect();
+      };
+    }
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -72,9 +88,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {showButton && (
           <button
             onClick={handleScrollClick}
-            className="fixed bottom-6 right-6 w-12 h-12 flex items-center justify-center 
-               bg-[#01B3BF] hover:bg-[#5fb9bf] text-white text-xl 
-               rounded-full shadow-lg z-50 transition-all duration-300"
+            className={`fixed right-6 w-12 h-12 flex items-center justify-center 
+               bg-[#01B3BF]/90 backdrop-blur-md hover:bg-[#01B3BF] text-white text-2xl 
+               rounded-full shadow-xl z-50 transition-all duration-300 
+               hover:scale-110 opacity-90 hover:opacity-100
+               ${isFooterVisible ? "bottom-24" : "bottom-6"}`}
             aria-label={isAtEnd ? "Scroll ke atas" : "Scroll ke bawah"}
           >
             {isAtEnd ? "↑" : "↓"}

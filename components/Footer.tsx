@@ -1,9 +1,11 @@
+// components/Footer.tsx
 import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-white px-5 py-8 shadow-[0_-10px_10px_-5px_rgba(0,0,0,0.08)] mx-4 mt-20]">
+    <footer className="backdrop-blur-md bg-white/80 px-5 py-8 shadow-[0_-10px_10px_-5px_rgba(0,0,0,0.08)] mx-4 mt-20 rounded-xl">
       <div className="flex flex-wrap justify-between items-center gap-5">
+        {/* Logo */}
         <div className="footer-logo">
           <a href="https://me-tech.id/" target="_blank" rel="noopener noreferrer">
             <Image
@@ -15,22 +17,27 @@ const Footer = () => {
             />
           </a>
         </div>
+
+        {/* Navigation Links */}
         <div className="flex flex-wrap gap-6">
-          <a href="#1" className="text-[#00C990] font-semibold hover:underline">
+          <a href="#1" className="text-[#18c3a4] font-semibold hover:underline">
             Home
           </a>
-          <a href="#2" className="text-[#00C990] font-semibold hover:underline">
+          <a href="#2" className="text-[#18c3a4] font-semibold hover:underline">
             S1
           </a>
-          <a href="#3" className="text-[#00C990] font-semibold hover:underline">
+          <a href="#3" className="text-[#18c3a4] font-semibold hover:underline">
             S2
           </a>
-          <a href="#7" className="text-[#00C990] font-semibold hover:underline">
+          <a href="#7" className="text-[#18c3a4] font-semibold hover:underline">
             Contact
           </a>
         </div>
       </div>
+
       <hr className="my-6 border-gray-200" />
+
+      {/* Bottom section */}
       <div className="flex flex-wrap justify-between items-center mt-6 text-sm text-[#666] gap-4">
         <p>© 2025 Me-Tech. All rights reserved.</p>
         <div className="flex items-center gap-4">
