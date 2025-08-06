@@ -1,87 +1,71 @@
-// components/Footer.tsx
 import Image from "next/image";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="backdrop-blur-md bg-white/80 px-5 py-8 shadow-[0_-10px_10px_-5px_rgba(0,0,0,0.08)] mx-4 mt-20 rounded-xl">
-      <div className="flex flex-wrap justify-between items-center gap-5">
-        {/* Logo */}
-        <div className="footer-logo">
-          <a href="https://me-tech.id/" target="_blank" rel="noopener noreferrer">
-            <Image
-              src="/img/footer/logo.png"
-              alt="Logo"
-              width={100}
-              height={40}
-              className="object-contain"
-            />
-          </a>
+    <footer id="9" className="bg-white text-gray mt-20">
+      {/* TOP GRID */}
+      <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8 shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
+        {/* Column 1 */}
+        <div>
+          <Image
+                    src="/img/footer/logo.png"
+                    alt="logo"
+                    width={120}
+                    height={45}
+                    className="object-contain"
+                    priority
+                  />
+          <br></br>
+          <p className="text-sm text-gray-600 mb-4">
+            Me-Tech, solusi teknologi transportasi yang siap membantu
+            Anda menjelajahi keunggulan sistem digital dengan mudah.
+          </p>
         </div>
 
-        {/* Navigation Links */}
-        <div className="flex flex-wrap gap-6">
-          <a href="#1" className="text-[#18c3a4] font-semibold hover:underline">
-            Home
-          </a>
-          <a href="#2" className="text-[#18c3a4] font-semibold hover:underline">
-            S1
-          </a>
-          <a href="#3" className="text-[#18c3a4] font-semibold hover:underline">
-            S2
-          </a>
-          <a href="#7" className="text-[#18c3a4] font-semibold hover:underline">
-            Contact
-          </a>
+        {/* Column 2: Kontak */}
+        <div>
+          <h4 className="text-[#01B3BF] font-bold mb-2">Kontak</h4>
+          <p className="text-sm text-gray-600 mb-1">Whatsapp: +62 813–1355–5008</p>
+          <p className="text-sm text-gray-600 mb-1">Email: info@me-tech.id</p>
+          <p className="text-sm text-gray-600">
+            Jl. Digital Raya No.10, Jakarta, Indonesia
+          </p>
+        </div>
+
+        {/* Column 3: Sosial Media */}
+        <div>
+          <h4 className="text-[#01B3BF] font-bold mb-2">Sosial Media</h4>
+          <div className="flex gap-4 text-xl mb-2">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-400">
+              <FaTwitter />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-400">
+              <FaInstagram />
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-400">
+              <FaFacebook />
+            </a>
+          </div>
+          <p className="text-sm text-gray-600">
+            Kami berkomitmen menjadikan setiap momen perjalanan Anda istimewa.
+          </p>
         </div>
       </div>
 
-      <hr className="my-6 border-gray-200" />
-
-      {/* Bottom section */}
-      <div className="flex flex-wrap justify-between items-center mt-6 text-sm text-[#666] gap-4">
+      {/* Divider */}
+      <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 gap-2">
         <p>© 2025 Me-Tech. All rights reserved.</p>
-        <div className="flex items-center gap-4">
-          <a
-            href="https://m.facebook.com/MilenialEliteTeknologi/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/img/sosial/icons8-facebook-48 (1).png"
-              alt="FB"
-              width={20}
-              height={20}
-              className="opacity-80 hover:opacity-100 transition"
-            />
-          </a>
-          <a
-            href="https://www.instagram.com/metech.id?igsh=cjI4dnVzcDAwcmlo"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/img/sosial/icons8-instagram-24.png"
-              alt="IG"
-              width={20}
-              height={20}
-              className="opacity-80 hover:opacity-100 transition"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/metechid/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/img/sosial/icons8-linkedin-48 (1).png"
-              alt="IN"
-              width={20}
-              height={20}
-              className="opacity-80 hover:opacity-100 transition"
-            />
-          </a>
-        </div>
+          <a href="#" className="hover:underline">F.A.Q</a>
+          <a href="#" className="hover:underline">Kebijakan Privasi</a>
+          <a href="#" className="hover:underline">Syarat & Ketentuan</a>
+        <p className="mt-2 md:mt-0 md:ml-auto text-right">
+          Powered by PT. Milenial Elite Teknologi
+        </p>
       </div>
+        
+    
+    
     </footer>
   );
 };

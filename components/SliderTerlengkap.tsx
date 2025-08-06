@@ -31,7 +31,7 @@ const SliderTerlengkap = () => {
       className="bg-white min-h-screen py-16 px-4 flex flex-col items-center text-center justify-center"
     >
       {/* Judul */}
-      <h2 className="text-[#00BFCB] font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+      <h2 className="text-[#00BFCB] font-extrabold text-3xl sm:text-3xl md:text-4xl lg:text-5xl">
         Sistem Transportasi Terlengkap
       </h2>
       <p className="text-gray-600 text-xs sm:text-sm md:text-base mt-2 mb-8 max-w-lg px-2">
