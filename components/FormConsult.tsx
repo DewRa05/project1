@@ -22,11 +22,11 @@ const FormConsult = () => {
   };
 
   return (
-    <section  id="8" className="min-h-screen bg-[#F9F9FF] flex items-center justify-center px-4 py-12">
+    <section  id="8" className="min-h-screen bg-[#fff] flex items-center justify-center px-4 py-12">
       <div className="bg-b w-full max-w-5xl mx-auto rounded-xl shadow-xl overflow-hidden flex flex-col md:flex-row">
        
         {/* Right form */}
-        <div className="md:w-3/4 p-8 sm:p-10">
+        <div className="md:w-3/4 p-8 sm:p-10 order-2 md:order-1">
           <h1 className="text-2xl font-bold text-[#01B3BF] text-center mb-3 font-size: 30px">
             Buat Persetujuan Dengan Kami!
           </h1>
@@ -77,7 +77,6 @@ const FormConsult = () => {
               className="w-full border border-gray-300 rounded-md px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#01B3BF]"
             />
 
-            {/* ✅ Tambahan bagian ini */}
             <textarea
               placeholder="Pesan atau kebutuhan Anda..."
               className="w-full border border-gray-300 rounded-md px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#01B3BF] resize-none"
@@ -98,11 +97,11 @@ const FormConsult = () => {
         </div>
 
         {/* Left illustration */}
-      <div className="md:w-1/2 bg-[#F9F9FF] flex items-center justify-center p-0">
+      <div className="md:w-1/2 bg-[#fff] order-1 flex items-center justify-center p-0 md:order-2">
         <img
-          src="/img/formKonsul/consult4.png"
+          src="/img/contact/60316.jpg"
           alt="Consult illustration"
-          className="w-full h-auto object-cover grayscale"
+          className="w-full h-auto object-cover"
         />
       </div>
       </div>
