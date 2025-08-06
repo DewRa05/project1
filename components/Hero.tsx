@@ -8,10 +8,6 @@ const Hero = () => {
     <section
       id="1"
       className="relative h-screen w-full overflow-hidden bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage:
-          "url('/img/hero/ChatGPT Image Jul 24, 2025, 12_12_18 PM.png')",
-      }}
     >
       <div className="absolute inset-0 bg-black/35 z-10" />
 

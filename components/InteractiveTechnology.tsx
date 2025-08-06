@@ -54,15 +54,23 @@ export default function InteractiveTechnology() {
 
   return (
     <section id="5" className="bg-[#DBFFF7] py-12 px-4 sm:px-6 lg:px-10">
-      <h2 className="text-center text-[#01B3BF] text-2xl sm:text-3xl lg:text-4xl mb-8 font-extrabold leading-snug" data-aos="fade-up" data-aos-delay="100">
+      <h2
+        className="text-center text-[#01B3BF] text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-8 font-extrabold leading-snug"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         Innovative Technology Solution
       </h2>
 
       <div className="py-10 h-fit">
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 items-start">
+        <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-10 items-start">
           {/* Iframe Section */}
-          <section className="w-full lg:w-2/3" data-aos="fade-up" data-aos-delay="200">
-            <div className="relative w-full h-[600px] sm:h-[350px] lg:h-[600px] overflow-hidden rounded-lg">
+          <section
+            className="w-full lg:w-2/3"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div className="relative w-full h-[280px] sm:h-[350px] lg:h-[600px] md:h-[550px] overflow-hidden rounded-lg">
               <iframe
                 id="secondFrame"
                 src="/second.html"
@@ -73,7 +81,11 @@ export default function InteractiveTechnology() {
           </section>
 
           {/* Sidebar */}
-          <ul className="w-full sm:max-w-md lg:w-[280px] h-fit space-y-2 border border-gray-300 rounded-lg shadow-md bg-white p-2" data-aos="fade-up" data-aos-delay="300">
+          <ul
+            className="w-full sm:max-w-md lg:w-[280px] h-fit space-y-2 border border-gray-300 rounded-lg shadow-md bg-white p-2"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             {areaLabels.map((label, i) => (
               <li
                 key={i}

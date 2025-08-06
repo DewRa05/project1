@@ -13,7 +13,7 @@ const SistemTransportasiDarat = () => {
         <div
           className="flex-1 text-center lg:text-left p-8 space-y-4"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#01B3BF] leading-tight" data-aos="fade-left" data-aos-delay="100">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#01B3BF] leading-tight" data-aos="fade-left" data-aos-delay="100">
             Sistem Transportasi <br className="hidden md:block"/>Darat Terdepan di Indonesia!
           </h2>
           <p className="text-[#000] text-lg sm:text-xl font-medium" data-aos="fade-left" data-aos-delay="300">
