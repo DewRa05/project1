@@ -27,10 +27,10 @@ const FormConsult = () => {
        
         {/* Right form */}
         <div className="md:w-3/4 p-8 sm:p-10 order-2 md:order-1">
-          <h1 className="text-2xl font-bold text-[#01B3BF] text-center mb-3 font-size: 30px">
+          <h1 className="text-4xl font-extrabold text-[#01B3BF] text-center mb-3">
             Buat Persetujuan Dengan Kami!
           </h1>
-          <p className="text-sm text-gray-500 text-center mb-6">
+          <p className="text-lg text-gray-500 text-center mb-6">
             Kami siap membantu Anda 
             <br />
             menjelajahi keunggulan sistem digital dengan mudah.       

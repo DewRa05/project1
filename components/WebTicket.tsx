@@ -10,31 +10,31 @@ const WebTiketing = () => {
       label: "Support Multi Payment",
       image: "img/web/Asset 10 1.png",
       title: "Innovative Technology Solution",
-      desc: "Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda",
+      desc: "Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda. Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda. Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda",
     },
     {
       label: "Responsive View",
       image: "img/web/Asset 5 2.png",
       title: "Responsive View",
-      desc: "Sistem kami bekerja optimal di desktop, tablet, dan perangkat mobile.",
+      desc: "Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda. Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda. Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda",
     },
     {
       label: "Info Lokasi Outlet",
       image: "img/web/tracking 1.png",
       title: "Info Lokasi Outlet",
-      desc: "Pengguna dapat dengan mudah melihat lokasi outlet melalui peta interaktif.",
+      desc: "Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda. Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda. Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda",
     },
     {
       label: "Kemudahan Cek Pesanan",
       image: "img/web/Asset 10 1.png",
       title: "Kemudahan Cek Pesanan",
-      desc: "Pengguna bisa melacak status pesanan dan tiket secara real-time.",
+      desc: "Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda. Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda. Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda",
     },
     {
       label: "Kode OTP",
       image: "img/web/Asset 10 1.png",
       title: "Kode OTP",
-      desc: "Sistem verifikasi dua langkah dengan kode OTP untuk keamanan akun.",
+      desc: "Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda. Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda. Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda",
     },
   ];
 
@@ -100,10 +100,10 @@ const WebTiketing = () => {
           data-aos="fade-up"
           data-aos-delay="500"
         >
-          <h3 className="text-[#01B3BF] text-lg sm:text-xl md:text-2xl font-bold mb-3 leading-relaxed">
+          <h3 className="text-[#01B3BF] text-md text-4xl md:text-4xl font-extrabold mb-3 leading-relaxed">
             {currentTab.title}
           </h3>
-          <p className="text-sm sm:text-base text-gray-700 leading-relaxed max-w-md mx-auto md:mx-0">
+          <p className="text-md sm:text-base text-gray-700 leading-relaxed max-w-md mx-auto md:mx-0">
             {currentTab.desc}
           </p>
         </div>

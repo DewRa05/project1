@@ -34,7 +34,7 @@ const SliderTerlengkap = () => {
       <h2 className="text-[#00BFCB] font-extrabold text-3xl sm:text-3xl md:text-4xl lg:text-5xl text-center">
         Sistem Transportasi Terlengkap
       </h2>
-      <p className="text-gray-600 text-xs sm:text-sm md:text-base mt-2 mb-8 max-w-lg px-2 text-center">
+      <p className="text-gray-600 text-md sm:text-sm md:text-base mt-3 mb-8 max-w-lg px-2 text-center">
         Semua fitur untuk mempermudah perjalanan Anda dalam satu sistem.
       </p>
 

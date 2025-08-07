@@ -21,7 +21,7 @@ const OurClient = () => {
           <p className="text-[#000] font-semibold uppercase text-sm mb-3 tracking-widest">
             CLIENT METECH
           </p>
-          <h2 className="text-[#01B3BF] text-3xl md:text-4xl font-extrabold leading-snug mb-5">
+          <h2 className="text-[#01B3BF] text-3xl md:text-5xl font-extrabold leading-snug mb-5">
             Mitra Terpercaya Metech
           </h2>
           <p className="text-[#000] text-base md:text-lg leading-relaxed max-w-2xl mx-auto">

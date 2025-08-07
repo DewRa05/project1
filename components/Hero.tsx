@@ -7,9 +7,8 @@ const Hero = () => {
   return (
     <section
       id="1"
-      className="relative h-screen w-full overflow-hidden bg-cover bg-center bg-no-repeat"
+      className="relative h-screen w-full overflow-hidden bg-gradient-to-br from-[#01B3BF] to-[#108992] min-h-screen bg-cover bg-center bg-no-repeat"
     >
-      <div className="absolute inset-0 bg-black/35 z-10" />
 
       <div className="relative z-20 text-white text-center flex flex-col items-center justify-center h-full gap-4 px-4">
     
@@ -23,11 +22,11 @@ const Hero = () => {
           />
         </div>
 
-        <h1 className="text-4xl md:text-6xl font-bold drop-shadow-lg leading-tight" data-aos="fade-down" data-aos-delay="500">
+        <h1 className="text-4xl md:text-6xl font-extrabold drop-shadow-lg leading-tight" data-aos="fade-down" data-aos-delay="500">
           Sistem Transportasi
         </h1>
 
-        <p className="font-extrabold text-lg md:text-xl drop-shadow-md" data-aos="fade-in" data-aos-delay="800">
+        <p className="text-lg md:text-xl drop-shadow-md" data-aos="fade-in" data-aos-delay="800">
           Darat & Laut Terdepan di Indonesia
         </p>
 
