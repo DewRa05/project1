@@ -27,7 +27,7 @@ const Hero = () => {
           Sistem Transportasi
         </h1>
 
-        <p className="text-lg md:text-xl drop-shadow-md" data-aos="fade-in" data-aos-delay="800">
+        <p className="font-extrabold text-lg md:text-xl drop-shadow-md" data-aos="fade-in" data-aos-delay="800">
           Darat & Laut Terdepan di Indonesia
         </p>
 

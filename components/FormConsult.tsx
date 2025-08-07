@@ -23,7 +23,7 @@ const FormConsult = () => {
 
   return (
     <section  id="8" className="min-h-screen bg-[#fff] flex items-center justify-center px-4 py-12">
-      <div className="bg-b w-full max-w-5xl mx-auto rounded-xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+      <div className="bg-b w-full max-w-5xl mx-auto rounded-xl overflow-hidden flex flex-col md:flex-row">
        
         {/* Right form */}
         <div className="md:w-3/4 p-8 sm:p-10 order-2 md:order-1">

@@ -43,7 +43,7 @@ const OurClient = () => {
               <img
                 src={`/img/ourclient/${logo}.png`}
                 alt={`logo ${logo}`}
-                className="h-14 md:h-24 object-contain"
+                className="h-18 md:h-28 object-contain"
               />
             </div>
           ))}

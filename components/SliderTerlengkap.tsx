@@ -28,29 +28,35 @@ const SliderTerlengkap = () => {
   return (
     <section
       id="4"
-      className="bg-white min-h-screen py-16 px-4 flex flex-col items-center text-center justify-center"
+      className="bg-white min-h-screen py-16 px-4 flex flex-col items-center justify-center"
     >
       {/* Judul */}
-      <h2 className="text-[#00BFCB] font-extrabold text-3xl sm:text-3xl md:text-4xl lg:text-5xl">
+      <h2 className="text-[#00BFCB] font-extrabold text-3xl sm:text-3xl md:text-4xl lg:text-5xl text-center">
         Sistem Transportasi Terlengkap
       </h2>
-      <p className="text-gray-600 text-xs sm:text-sm md:text-base mt-2 mb-8 max-w-lg px-2">
+      <p className="text-gray-600 text-xs sm:text-sm md:text-base mt-2 mb-8 max-w-lg px-2 text-center">
         Semua fitur untuk mempermudah perjalanan Anda dalam satu sistem.
       </p>
 
-      {/* Grid Card Center */}
+      {/* Grid Card */}
       <div className="w-full flex justify-center">
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {cards.map((card, index) => (
             <div
               key={index}
               data-aos="fade-up"
               data-aos-delay={index * 100}
-              className="bg-white border border-gray-200 shadow-sm p-4 sm:p-5 flex flex-col items-center text-center hover:shadow-md transition w-[140px] sm:w-44"
+              className="bg-white border border-gray-200 shadow-sm rounded-md p-5 flex flex-col items-start text-left hover:shadow-md transition w-[300px] sm:w-[340px]"
             >
-              <Image src={card.icon} alt={card.title} width={60} height={60} className="sm:w-[70px] sm:h-[70px]" />
-              <h4 className="text-gray-800 font-semibold text-xs sm:text-sm mt-3">{card.title}</h4>
-              <p className="text-gray-600 text-[10px] sm:text-xs mt-2 leading-snug px-1 sm:px-2">
+              <Image
+                src={card.icon}
+                alt={card.title}
+                width={70}
+                height={70}
+                className="mb-3"
+              />
+              <h4 className="text-gray-800 font-semibold text-sm sm:text-base">{card.title}</h4>
+              <p className="text-gray-600 text-xs sm:text-sm mt-1 leading-snug">
                 {card.desc}
               </p>
             </div>
