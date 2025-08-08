@@ -12,12 +12,12 @@ export default function HomePage() {
     <main>
       <Hero />
       <SistemTransportasiDarat />
-      <SliderSistemTransportasi />
-      <SliderTerlengkap />
-      <InteractiveTechnology />
       <OurClient />
       <WebTiketing />
+      <SliderTerlengkap />
       <FormConsult />
+      <SliderSistemTransportasi />
+      <InteractiveTechnology />
     </main>
   );
 }

@@ -7,34 +7,34 @@ const WebTiketing = () => {
 
   const tabs = [
     {
-      label: "Support Multi Payment",
+      label: "Pembayaran",
       image: "img/web/Asset 10 1.png",
-      title: "Innovative Technology Solution",
-      desc: "Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda. Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda. Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda",
+      title: "Dukungan Pembayaran Lengkap",
+      desc: "Sistem mendukung berbagai metode pembayaran, mulai dari transfer bank, e-wallet, hingga kartu kredit untuk memudahkan pelanggan Anda dalam bertransaksi.",
     },
     {
-      label: "Responsive View",
+      label: "Tampilan responsif",
       image: "img/web/Asset 5 2.png",
-      title: "Responsive View",
-      desc: "Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda. Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda. Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda",
+      title: "Tampilan Responsif di Semua Perangkat",
+      desc: "Website akan tampil optimal di semua perangkat, baik desktop, tablet, maupun smartphone, untuk memberikan pengalaman pengguna terbaik.",
     },
     {
       label: "Info Lokasi Outlet",
       image: "img/web/tracking 1.png",
-      title: "Info Lokasi Outlet",
-      desc: "Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda. Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda. Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda",
+      title: "Lacak Lokasi Outlet dengan Mudah",
+      desc: "Pelanggan dapat menemukan lokasi outlet terdekat dengan fitur integrasi peta dan informasi lokasi secara real-time.",
     },
     {
       label: "Kemudahan Cek Pesanan",
       image: "img/web/Asset 10 1.png",
-      title: "Kemudahan Cek Pesanan",
-      desc: "Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda. Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda. Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda",
+      title: "Pantau Pesanan Secara Real-Time",
+      desc: "Pelanggan dapat memantau status pesanan mereka dengan mudah, dari proses pemesanan hingga pengiriman selesai.",
     },
     {
       label: "Kode OTP",
       image: "img/web/Asset 10 1.png",
-      title: "Kode OTP",
-      desc: "Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda. Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda. Me-Tech hadir memberikan solusi teknologi yang inovatif untuk bisnis Anda",
+      title: "Keamanan Login dengan OTP",
+      desc: "Menjamin keamanan akun pengguna dengan sistem verifikasi dua langkah menggunakan Kode OTP yang dikirim ke perangkat terdaftar.",
     },
   ];
 
@@ -42,7 +42,7 @@ const WebTiketing = () => {
 
   return (
     <section
-      id="7"
+      id="4"
       className="bg-white min-h-screen flex flex-col justify-center items-center px-4 py-10"
       data-aos="fade-up"
       data-aos-delay="100"
@@ -80,7 +80,7 @@ const WebTiketing = () => {
       </div>
 
       {/* Konten */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 w-full max-w-6xl px-4">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-10 w-full max-w-6xl px-4">
         {/* Gambar */}
         <div
           className="w-full md:w-1/2 flex justify-center items-center h-[220px] sm:h-[250px] md:h-[300px]"

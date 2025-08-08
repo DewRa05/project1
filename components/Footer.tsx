@@ -1,29 +1,24 @@
 import Image from "next/image";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer id="9" className="bg-white text-gray mt-20">
       {/* TOP GRID */}
       <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8 shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
-        {/* Column 1 */}
-        <div>
+        {/* Column 1 - Logo */}
+        <div className="flex justify-center items-start md:items-center">
           <Image
             src="/img/footer/logo.png"
             alt="logo"
-            width={120}
-            height={45}
+            width={200}
+            height={100}
             className="object-contain"
             priority
           />
-          <br></br>
-          <p className="text-sm text-gray-600 mb-4">
-            Me-Tech, solusi teknologi transportasi yang siap membantu Anda
-            menjelajahi keunggulan sistem digital dengan mudah.
-          </p>
         </div>
 
-        {/* Column 2: Kontak */}
+        {/* Column 2 - Kontak */}
         <div>
           <h4 className="text-[#01B3BF] font-bold mb-2">Kontak</h4>
           <p className="text-sm text-gray-600 mb-1">
@@ -35,9 +30,9 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Column 3: Sosial Media */}
+        {/* Column 3 - Sosial Media */}
         <div>
-          <h4 className="text-[#01B3BF] font-bold mb-2">Sosial Media</h4>
+          <h4 className="text-[#01B3BF] font-bold mb-2 " >Sosial Media</h4>
           <div className="flex gap-4 text-xl mb-2">
             <a
               href="https://twitter.com"
@@ -45,7 +40,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="hover:text-[#00BFCB]"
             >
-              <FaTwitter />
+              <FaLinkedin />
             </a>
             <a
               href="https://instagram.com"
@@ -65,7 +60,7 @@ const Footer = () => {
             </a>
           </div>
           <p className="text-sm text-gray-600">
-            Kami berkomitmen menjadikan setiap momen perjalanan Anda istimewa.
+            Kami berkomitmen menjadikan sistem menyenangkan.
           </p>
         </div>
       </div>

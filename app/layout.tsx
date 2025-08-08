@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const sectionOrder = ["1", "2", "3", "4", "5", "6", "7", "8"];
+const sectionOrder = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
@@ -17,9 +17,18 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
 
-    const heroSection = document.getElementById("1");
-    if (heroSection) {
-      heroSection.scrollIntoView({ behavior: "auto" });
+    const hash = window.location.hash;
+    if (hash) {
+      const el = document.getElementById(hash.substring(1));
+      if (el) {
+        el.scrollIntoView({ behavior: "auto" });
+        window.history.replaceState(null, "", window.location.pathname);
+      }
+    } else {
+      const heroSection = document.getElementById("1");
+      if (heroSection) {
+        heroSection.scrollIntoView({ behavior: "auto" });
+      }
     }
 
     const handleScroll = () => {
@@ -40,25 +49,30 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
       setCurrentSectionIndex(closestIndex);
       setShowButton(true);
+
+      const newHash = `#${sectionOrder[closestIndex]}`;
+      if (window.location.hash !== newHash) {
+        window.history.replaceState(null, "", newHash);
+      }
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
 
-    // Observasi footer agar tombol tidak menutupi
     const footer = document.querySelector("footer");
+    let observer: IntersectionObserver | null = null;
+
     if (footer) {
-      const observer = new IntersectionObserver(
+      observer = new IntersectionObserver(
         (entries) => setIsFooterVisible(entries[0].isIntersecting),
         { threshold: 0.1 }
       );
       observer.observe(footer);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-        observer.disconnect();
-      };
     }
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (observer) observer.disconnect();
+    };
   }, []);
 
   const handleScrollClick = () => {
@@ -69,7 +83,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         nextSection.scrollIntoView({ behavior: "smooth" });
       }
     } else {
-      const topSection = document.getElementById("1"); // kembali ke awal
+      const topSection = document.getElementById("1");
       if (topSection) {
         topSection.scrollIntoView({ behavior: "smooth" });
       }
@@ -88,11 +102,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {showButton && (
           <button
             onClick={handleScrollClick}
-            className={`fixed right-6 w-12 h-12 flex items-center justify-center 
-               bg-[#01B3BF]/90 backdrop-blur-md hover:bg-[#01B3BF] text-white text-2xl 
-               rounded-full shadow-xl z-50 transition-all duration-300 
-               hover:scale-110 opacity-90 hover:opacity-100
-               ${isFooterVisible ? "bottom-24" : "bottom-6"}`}
+            className={`fixed right-6 w-12 h-12 flex items-center justify-center
+              bg-[#01B3BF]/90 backdrop-blur-md hover:bg-[#01B3BF] text-white text-2xl rounded-full shadow-xl z-50
+              transition-all duration-300 hover:scale-110 opacity-90 hover:opacity-100 ${
+                isFooterVisible ? "bottom-24" : "bottom-6"
+              }`}
             aria-label={isAtEnd ? "Scroll ke atas" : "Scroll ke bawah"}
           >
             {isAtEnd ? "↑" : "↓"}
