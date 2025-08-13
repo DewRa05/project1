@@ -6,6 +6,7 @@ import SliderSistemTransportasi from "@/components/SliderSistemTransportasi";
 import SliderTerlengkap from "@/components/SliderTerlengkap";
 import WebTiketing from "@/components/WebTicket";
 import InteractiveTechnology from "@/components/InteractiveTechnology";
+import Ota from "@/components/Ota";
 
 export default function HomePage() {
   return (
@@ -14,10 +15,11 @@ export default function HomePage() {
       <SistemTransportasiDarat />
       <OurClient />
       <WebTiketing />
+      <Ota/>
       <SliderTerlengkap />
-      <FormConsult />
       <SliderSistemTransportasi />
       <InteractiveTechnology />
+      <FormConsult />
     </main>
   );
 }

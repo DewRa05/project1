@@ -14,12 +14,11 @@ type CardItem = {
 const cards: CardItem[] = [
   { title: "Atur Jadwal", icon: "/img/sliderLengkap/3.png", desc: "Satu seat untuk semua, tidak ada double booking." },
   { title: "Proses booking mudah", icon: "/img/sliderLengkap/6.png", desc: "Booking tiket jadi mudah dan cepat tanpa antre." },
-  { title: "Terhubung dengan OTA", icon: "/img/sliderLengkap/1.png", desc: "Integrasi langsung dengan berbagai OTA terpercaya." },
   { title: "Harga tiket fleksibel", icon: "/img/sliderLengkap/5.png", desc: "Harga menyesuaikan kebutuhan dan waktu perjalanan." },
   { title: "Print tiket akurat", icon: "/img/sliderLengkap/4.png", desc: "Cetak tiket langsung tanpa kesalahan dan cepat." },
   { title: "Teruji handal", icon: "/img/sliderLengkap/2.png", desc: "Sistem teruji dalam berbagai skenario transportasi." },
 ];
-
+ 
 const SliderTerlengkap = () => {
   useEffect(() => {
     AOS.init({ duration: 700, once: true });
@@ -27,7 +26,7 @@ const SliderTerlengkap = () => {
 
   return (
     <section
-      id="5"
+      id="6"
       className="bg-white min-h-screen py-16 px-4 flex flex-col items-center justify-center"
     >
       {/* Judul */}

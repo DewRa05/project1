@@ -7,6 +7,18 @@ import "aos/dist/aos.css";
 const images = ["/img/slider/laut.png", "/img/slider/car.png"];
 const labels = ["Laut", "Darat"];
 
+// Konten dinamis sesuai slide
+const descriptions = [
+  {
+    title: "Sistem Tiket Laut",
+    text: "Sistem tiket online untuk transportasi laut, memudahkan pemesanan kapal dan manajemen penumpang.",
+  },
+  {
+    title: "Sistem Tiket Darat",
+    text: "Sistem tiket online untuk transportasi darat, mempermudah pemesanan bus, travel, dan pengelolaan perjalanan.",
+  },
+];
+
 const SliderSistemTransportasi = () => {
   const [current, setCurrent] = useState(0);
 
@@ -89,7 +101,7 @@ const SliderSistemTransportasi = () => {
               data-aos="fade-down"
               data-aos-delay="700"
             >
-              Me-Tech
+              {descriptions[current].title}
             </span>
             Sistem Tiket Online
           </h3>
@@ -98,9 +110,7 @@ const SliderSistemTransportasi = () => {
             data-aos="fade-up"
             data-aos-delay="900"
           >
-            Sistem Tiket Online adalah sistem untuk meningkatkan produktivitas
-            perusahaan transportasi, memudahkan operasional, dan meningkatkan
-            efisiensi secara signifikan.
+            {descriptions[current].text}
           </p>
         </div>
       </div>

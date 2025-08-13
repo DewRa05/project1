@@ -36,24 +36,22 @@ const items = document.querySelectorAll<HTMLLIElement>(".sidebar-item");
     }, []);
 
     const areaLabels = [
-    "Reservasi Online Aplikasi / Web",
-    "Reservasi Online Alfamart / Web",
-    "Reservasi Online Indomaret / Web",
-    "Reservasi Outlet Jakarta",
-    "Reservasi Outlet Bandung",
-    "Reservasi Outlet Surabaya",
-    "Reservasi Outlet Yogyakarta",
-    "Reservasi Outlet Medan",
-    "Reservasi Outlet Bali",
-    "Reservasi Outlet Makassar",
-    "Reservasi Outlet Balikpapan",
-    "Reservasi Outlet Batam",
-    "Reservasi Outlet Malang",
-    "Reservasi Outlet Palembang",
+    "Reservasi online aplikasi / web",
+    "Reservasi tiket self service",
+    "Reservasi dengan petugas",
+    "Reservasi pengiriman paket",
+    "Trakcing paket",
+    "Sistem penjualan",
+    "Sistem operasional",
+    "Arrival/Departure boarding",
+    "Sistem sopir",
+    "Sistem kursi",
+    "Sistem pengolahan keuangan",
+    "Sistem manajerial dan operasional",
     ];
 
     return (
-    <section id="8" className="bg-white py-12 px-4 sm:px-6 lg:px-10">
+    <section id="7" className="bg-white py-12 px-4 sm:px-6 lg:px-10">
         <h2 className="text-center text-[#01B3BF] text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-8 font-extrabold leading-snug"
             data-aos="fade-up" data-aos-delay="100">
             Monitor Kegiatan Sistem
@@ -76,7 +74,7 @@ const items = document.querySelectorAll<HTMLLIElement>(".sidebar-item");
                     {areaLabels.map((label, i) => (
                     <li key={i}
                         className="sidebar-item cursor-pointer px-3 py-2 rounded-md text-gray-700 font-medium text-sm hover:bg-[#effffb] hover:text-[#00c990] hover:border-l-4 hover:border-[#00b7d4] transition"
-                        data-area={i + 1} data-aos="fade-up">
+                        data-area={i + 1}>
                         {label}
                     </li>
                     ))}

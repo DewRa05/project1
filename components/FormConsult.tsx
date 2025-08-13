@@ -48,7 +48,7 @@ const FormConsult = () => {
 
   return (
     <section
-      id="6"
+      id="8"
       className="min-h-screen bg-[#fff] flex items-center justify-center px-4 py-12"
     >
       <div
@@ -56,21 +56,11 @@ const FormConsult = () => {
         data-aos="fade-up"
       >
         {/* Right form */}
-        <div
-          className="md:w-3/4 p-8 sm:p-10 order-2 md:order-1"
-          data-aos="fade-right"
-        >
-          <h1
-            className="text-4xl font-extrabold text-[#01B3BF] text-center mb-3"
-            data-aos="zoom-in"
-          >
+        <div className="md:w-3/4 p-8 sm:p-10 order-2 md:order-1">
+          <h1 className="text-4xl font-extrabold text-[#01B3BF] text-center mb-3">
             Buat Persetujuan Dengan Kami!
           </h1>
-          <p
-            className="text-lg text-gray-500 text-center mb-6"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
+          <p className="text-lg text-gray-500 text-center mb-6">
             Kami siap membantu Anda <br /> menjelajahi keunggulan sistem digital
             dengan mudah.
           </p>
@@ -81,8 +71,6 @@ const FormConsult = () => {
               placeholder="Nama Lengkap"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              data-aos="fade-up"
-              data-aos-delay="300"
               className="w-full border border-gray-300 rounded-md px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#01B3BF]"
             />
             <input
@@ -90,15 +78,9 @@ const FormConsult = () => {
               placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              data-aos="fade-up"
-              data-aos-delay="400"
               className="w-full border border-gray-300 rounded-md px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#01B3BF]"
             />
-            <div
-              data-aos="fade-up"
-              data-aos-delay="500"
-              style={{ position: "relative", zIndex: 50 }}
-            >
+            <div style={{ position: "relative", zIndex: 50 }}>
               <PhoneInput
                 country={"id"}
                 value={phone}
@@ -121,7 +103,7 @@ const FormConsult = () => {
                   border: "1px solid #ccc",
                   borderTopLeftRadius: "5px",
                   borderBottomLeftRadius: "5px",
-                  backgroundColor: "white", 
+                  backgroundColor: "white",
                 }}
                 onKeyDown={handlePhoneKeyDown}
               />
@@ -132,8 +114,6 @@ const FormConsult = () => {
               placeholder="Nama Perusahaan"
               value={company}
               onChange={(e) => setCompany(e.target.value)}
-              data-aos="fade-up"
-              data-aos-delay="600"
               className="w-full border border-gray-300 rounded-md px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#01B3BF]"
             />
 
@@ -141,24 +121,16 @@ const FormConsult = () => {
               placeholder="Pesan atau kebutuhan Anda..."
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              data-aos="fade-up"
-              data-aos-delay="700"
               className="w-full border border-gray-300 rounded-md px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#01B3BF] resize-none"
               rows={4}
             />
 
-            <p
-              className="text-sm text-gray-500 text-center mb-6"
-              data-aos="fade-up"
-              data-aos-delay="800"
-            >
+            <p className="text-sm text-gray-500 text-center mb-6">
               Kami akan menghubungi Anda dalam waktu 24 jam
             </p>
             <button
               type="submit"
               className="w-full bg-[#01B3BF] text-white py-2 rounded-md text-sm font-medium hover:bg-[#0198a8] transition"
-              data-aos="zoom-in"
-              data-aos-delay="900"
             >
               Konsultasi Sekarang
             </button>
@@ -166,10 +138,7 @@ const FormConsult = () => {
         </div>
 
         {/* Left illustration */}
-        <div
-          className="md:w-1/2 bg-[#fff] order-1 flex items-center justify-center p-0 md:order-2"
-          data-aos="fade-left"
-        >
+        <div className="md:w-1/2 bg-[#fff] order-1 flex items-center justify-center p-0 md:order-2">
           <img
             src="/img/contact/60316.jpg"
             alt="Consult illustration"

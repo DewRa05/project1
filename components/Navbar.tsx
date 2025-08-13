@@ -9,9 +9,9 @@ const [isOpen, setIsOpen] = useState(false);
 const sections = [
 { id: "1", label: "Beranda" },
 { id: "3", label: "Mitra" },
-{ id: "4", label: "Fitur" },
-{ id: "5", label: "Sistem" },
-{ id: "6", label: "Layanan" },
+{ id: "4", label: "Sistem" },
+{ id: "5", label: "OTA" },
+{ id: "8", label: "Layanan" },
 ];
 
 useEffect(() => {

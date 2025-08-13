@@ -7,34 +7,40 @@ const WebTiketing = () => {
 
   const tabs = [
     {
-      label: "Pembayaran",
+      label: "Website",
       image: "img/web/Asset 10 1.png",
-      title: "Dukungan Pembayaran Lengkap",
-      desc: "Sistem mendukung berbagai metode pembayaran, mulai dari transfer bank, e-wallet, hingga kartu kredit untuk memudahkan pelanggan Anda dalam bertransaksi.",
+      title: "Tampilan Website yang Modern dan Menarik",
+      desc: "Sistem website memudahkan pengguna menjangkau informasi dan layanan transportasi.",
     },
     {
-      label: "Tampilan responsif",
+      label: "Mobile",
+      image: "img/web/Asset 10 1.png",
+      title: "Tampilan Mobile yang Responsif",
+      desc: "Sistem mobile memudahkan pengguna menjangkau informasi dan layanan transportasi.",
+    },
+    {
+      label: "E-KiosK Machine",
       image: "img/web/Asset 5 2.png",
       title: "Tampilan Responsif di Semua Perangkat",
       desc: "Website akan tampil optimal di semua perangkat, baik desktop, tablet, maupun smartphone, untuk memberikan pengalaman pengguna terbaik.",
     },
     {
-      label: "Info Lokasi Outlet",
+      label: "Driver App",
       image: "img/web/tracking 1.png",
       title: "Lacak Lokasi Outlet dengan Mudah",
       desc: "Pelanggan dapat menemukan lokasi outlet terdekat dengan fitur integrasi peta dan informasi lokasi secara real-time.",
     },
     {
-      label: "Kemudahan Cek Pesanan",
+      label: "Actual Time of Arrival",
       image: "img/web/Asset 10 1.png",
       title: "Pantau Pesanan Secara Real-Time",
       desc: "Pelanggan dapat memantau status pesanan mereka dengan mudah, dari proses pemesanan hingga pengiriman selesai.",
     },
     {
-      label: "Kode OTP",
-      image: "img/web/Asset 10 1.png",
-      title: "Keamanan Login dengan OTP",
-      desc: "Menjamin keamanan akun pengguna dengan sistem verifikasi dua langkah menggunakan Kode OTP yang dikirim ke perangkat terdaftar.",
+      label: "E-Reporting",
+      image: "img/web/reporting.png",
+      title: "Pelaporan dari Sistem",
+      desc: " Pengolahan pelaporan yang cepat dan akurat untuk meningkatkan kinerja dan kualitas layanan.",
     },
   ];
 
@@ -52,7 +58,7 @@ const WebTiketing = () => {
         className="text-center text-[#01B3BF] text-3xl lg:text-5xl sm:text-3xl md:text-4xl font-extrabold mb-6 sm:mb-8"
         data-aos="fade-down"
       >
-        Fitur Website Ticketing
+        Model Sistem 
       </h2>
 
       {/* Tabs */}
@@ -100,7 +106,7 @@ const WebTiketing = () => {
           data-aos="fade-up"
           data-aos-delay="500"
         >
-          <h3 className="text-[#01B3BF] text-md text-4xl md:text-4xl font-extrabold mb-3 leading-relaxed">
+          <h3 className="text-[#01B3BF] text-md text-4xl md:text-5xl -mt-10 font-extrabold mb-3 leading-relaxed">
             {currentTab.title}
           </h3>
           <p className="text-md sm:text-base text-gray-700 leading-relaxed max-w-md mx-auto md:mx-0">
