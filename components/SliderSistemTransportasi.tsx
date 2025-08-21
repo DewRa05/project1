@@ -103,7 +103,7 @@ const SliderSistemTransportasi = () => {
             >
               {descriptions[current].title}
             </span>
-            Sistem Tiket Online
+            Sistem Tiket
           </h3>
           <p
             className="text-[#6B6B6B] text-base md:text-lg leading-relaxed border-l-4 border-[#00b7d4] pl-4"

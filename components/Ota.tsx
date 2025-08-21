@@ -36,7 +36,7 @@ export default function OtaFeatures() {
     >
       <div className="max-w-4xl mx-auto text-center">
         {/* Judul */}
-        <h2 className="text-5xl font-extrabold text-[#01B3BF] mb-3">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-[#01B3BF] mb-3">
           Terhubung dengan OTA
         </h2>
         <p className="text-gray-500 max-w-3xl mx-auto mb-10 text-lg leading-relaxed">

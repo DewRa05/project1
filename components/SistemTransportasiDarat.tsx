@@ -19,7 +19,7 @@ const SistemTransportasiDarat = () => {
         {/* Text Section */}
         <div className="flex-1 text-center lg:text-left p-8 space-y-4">
           <h2
-            className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#01B3BF] leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#01B3BF] leading-tight"
             data-aos="fade-left"
             data-aos-delay="100"
           >
@@ -41,9 +41,9 @@ const SistemTransportasiDarat = () => {
           data-aos="fade-up"
           data-aos-delay="500"
         >
-          <div className="w-[300px] sm:w-[340px] md:w-[460px] lg:w-[500px] floating">
+          <div className="w-[350px] sm:w-[350px] md:w-[500px] lg:w-[500px] floating">
             <Image
-              src="/img/intro/intro.png"
+              src="/img/intro/IMG2[1].png"
               alt="Sistem Transportasi"
               width={800}
               height={600}

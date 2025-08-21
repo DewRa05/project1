@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import PhoneInput from "react-phone-input-2";
@@ -48,7 +49,7 @@ const FormConsult = () => {
 
   return (
     <section
-      id="8"
+      id="9"
       className="min-h-screen bg-[#fff] flex items-center justify-center px-4 py-12"
     >
       <div
@@ -139,10 +140,12 @@ const FormConsult = () => {
 
         {/* Left illustration */}
         <div className="md:w-1/2 bg-[#fff] order-1 flex items-center justify-center p-0 md:order-2">
-          <img
+          <Image
             src="/img/contact/60316.jpg"
             alt="Consult illustration"
-            className="w-full h-auto object-cover"
+            width={600}
+            height={400}
+            className="object-cover w-full h-auto"
           />
         </div>
       </div>

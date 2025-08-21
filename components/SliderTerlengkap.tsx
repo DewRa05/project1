@@ -12,11 +12,12 @@ type CardItem = {
 };
 
 const cards: CardItem[] = [
-  { title: "Atur Jadwal", icon: "/img/sliderLengkap/3.png", desc: "Satu seat untuk semua, tidak ada double booking." },
-  { title: "Proses booking mudah", icon: "/img/sliderLengkap/6.png", desc: "Booking tiket jadi mudah dan cepat tanpa antre." },
-  { title: "Harga tiket fleksibel", icon: "/img/sliderLengkap/5.png", desc: "Harga menyesuaikan kebutuhan dan waktu perjalanan." },
-  { title: "Print tiket akurat", icon: "/img/sliderLengkap/4.png", desc: "Cetak tiket langsung tanpa kesalahan dan cepat." },
-  { title: "Teruji handal", icon: "/img/sliderLengkap/2.png", desc: "Sistem teruji dalam berbagai skenario transportasi." },
+  { title: "Atur Jadwal", icon: "/img/sliderLengkap/atur jadwal.png", desc: "Satu seat untuk semua, tidak ada double booking." },
+  { title: "Proses booking mudah", icon: "/img/sliderLengkap/booking mudah.png", desc: "Booking tiket jadi mudah dan cepat tanpa antre." },
+  { title: "Harga tiket fleksibel", icon: "/img/sliderLengkap/tiket.png", desc: "Harga menyesuaikan kebutuhan dan waktu perjalanan." },
+  { title: "Print tiket akurat", icon: "/img/sliderLengkap/print akurat.png", desc: "Cetak tiket langsung tanpa kesalahan dan cepat." },
+  { title: "Teruji handal", icon: "/img/sliderLengkap/teruji.png", desc: "Sistem teruji dalam berbagai skenario transportasi." },
+  { title: "Pembayaran", icon: "/img/sliderLengkap/payment[1].png", desc: "Pembayaran cepat dan aman." },
 ];
  
 const SliderTerlengkap = () => {
@@ -30,7 +31,7 @@ const SliderTerlengkap = () => {
       className="bg-white min-h-screen py-16 px-4 flex flex-col items-center justify-center"
     >
       {/* Judul */}
-      <h2 className="text-[#00BFCB] font-extrabold text-3xl sm:text-3xl md:text-4xl lg:text-5xl text-center">
+      <h2 className="text-[#00BFCB] font-extrabold text-4xl sm:text-3xl md:text-5xl text-center">
         Sistem Transportasi Terlengkap
       </h2>
       <p className="text-gray-600 text-md sm:text-sm md:text-base mt-3 mb-8 max-w-lg px-2 text-center">
