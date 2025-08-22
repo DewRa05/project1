@@ -51,7 +51,7 @@ const items = document.querySelectorAll<HTMLLIElement>(".sidebar-item");
     ];
 
     return (
-    <section id="7" className="bg-white py-12 px-4 sm:px-6 lg:px-10">
+    <section id="8" className="bg-white py-12 px-4 sm:px-6 lg:px-10">
         <h2 className="text-center text-[#01B3BF] text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-8 font-extrabold leading-snug"
             data-aos="fade-up" data-aos-delay="100">
             Monitor Kegiatan Sistem

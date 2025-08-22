@@ -18,7 +18,7 @@ const Hero = () => {
         data-aos-duration="1000"
         data-aos-once="true"
       >
-        <div className="mt-4">
+        <div className="mt-25">
           <Image
             src="/img/hero/logo.png"
             alt="Logo Transportasi"
@@ -28,12 +28,12 @@ const Hero = () => {
           />
         </div>
 
-        <h1 className="text-4xl md:text-6xl font-extrabold drop-shadow-lg leading-tight mt-2">
+        <h1 className="text-3xl md:text-5xl font-extrabold drop-shadow-lg leading-tight mt-2">
           Sistem Transportasi Modern
         </h1>
 
         <p className="text-lg md:text-xl drop-shadow-md">
-          Layanan Darat & Laut Terpercaya di Indonesia
+          Layanan Tranportasi Darat & Laut Terpercaya di Indonesia
         </p>
       </div>
     </section>

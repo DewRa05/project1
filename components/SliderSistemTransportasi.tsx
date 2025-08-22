@@ -11,11 +11,11 @@ const labels = ["Laut", "Darat"];
 const descriptions = [
   {
     title: "Sistem Tiket Laut",
-    text: "Sistem tiket online untuk transportasi laut, memudahkan pemesanan kapal dan manajemen penumpang.",
+    text: "Sistem tiket untuk transportasi laut, memudahkan pemesanan kapal dan manajemen penumpang.",
   },
   {
     title: "Sistem Tiket Darat",
-    text: "Sistem tiket online untuk transportasi darat, mempermudah pemesanan bus, travel, dan pengelolaan perjalanan.",
+    text: "Sistem tiket untuk transportasi darat, mempermudah pemesanan bus, travel, dan pengelolaan perjalanan.",
   },
 ];
 
@@ -103,7 +103,7 @@ const SliderSistemTransportasi = () => {
             >
               {descriptions[current].title}
             </span>
-            Sistem Tiket Online
+            Sistem Tiket 
           </h3>
           <p
             className="text-[#6B6B6B] text-base md:text-lg leading-relaxed border-l-4 border-[#00b7d4] pl-4"

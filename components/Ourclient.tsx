@@ -32,7 +32,7 @@ return (
         <div className="flex justify-center items-center gap-6 sm:gap-8 flex-wrap">
             {clientLogos.map((logo, index) => (
             <div key={index}
-                className="flex justify-center items-center bg-white border border-gray-200 p-5 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110 cursor-pointer w-[180px] h-[120px]"
+                className="flex justify-center items-center bg-white border border-gray-200 p-5 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110  w-[180px] h-[120px]"
                 data-aos="zoom-in" data-aos-delay={index * 120}>
                 <img src={`/img/ourclient/${logo}.png`} alt={`logo ${logo}`} className="h-24 md:h-32 object-contain" />
             </div>

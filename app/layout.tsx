@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const sectionOrder = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+const sectionOrder = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
