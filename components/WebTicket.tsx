@@ -10,53 +10,36 @@ const WebTiketing = () => {
   const tabs = [
     {
       label: "Website",
-      image: "img/web/Web.png",
-
       image: "/img/web/Web.png",
-
       title: "Tampilan Website yang Modern dan Menarik",
       desc: "Sistem website memudahkan pengguna menjangkau informasi dan layanan transportasi.",
     },
     {
       label: "Mobile",
-      image: "img/web/Mobile.png",
       image: "/img/web/Mobile.png",
       title: "Tampilan Mobile yang Responsif",
       desc: "Sistem mobile memudahkan pengguna menjangkau informasi dan layanan transportasi.",
     },
     {
       label: "E-KiosK Machine",
-
-      image: "img/web/KiosK.png",
-
       image: "/img/web/KiosK.png",
-
       title: "Tampilan Responsif di Semua Perangkat",
       desc: "Website akan tampil optimal di semua perangkat, baik desktop, tablet, maupun smartphone, untuk memberikan pengalaman pengguna terbaik.",
     },
     {
       label: "Driver App",
-
-      image: "img/web/Driver App.png",
-
       image: "/img/web/Driver App.png",
-
       title: "Lacak Lokasi Outlet dengan Mudah",
       desc: "Pelanggan dapat menemukan lokasi outlet terdekat dengan fitur integrasi peta dan informasi lokasi secara real-time.",
     },
     {
       label: "Actual Time of Arrival",
-
-      image: "img/web/Arrival.png",
-
       image: "/img/web/Arrival.png",
-
       title: "Pantau Pesanan Secara Real-Time",
       desc: "Pelanggan dapat memantau status pesanan mereka dengan mudah, dari proses pemesanan hingga pengiriman selesai.",
     },
     {
       label: "E-Reporting",
-  image: "img/web/Report.png",
       image: "/img/web/Report.png",
       title: "Pelaporan dari Sistem",
       desc: "Pengolahan pelaporan yang cepat dan akurat untuk meningkatkan kinerja dan kualitas layanan.",
@@ -123,12 +106,6 @@ const WebTiketing = () => {
         </div>
 
         {/* Deskripsi */}
-        <div
-          className="w-full md:w-1/2 text-center md:text-left px-2 sm:px-6"
-          data-aos="fade-up"
-          data-aos-delay="500"
-        >
-          <h3 className="text-[#01B3BF]  text-3xl md:text-5xl -mt-10 font-extrabold mb-3 leading-relaxed">
         <div className="w-full md:w-1/2 text-center md:text-left px-2 sm:px-6">
           <h3 className="text-[#01B3BF] text-3xl md:text-5xl font-extrabold mb-3 leading-relaxed">
             {currentTab.title}
