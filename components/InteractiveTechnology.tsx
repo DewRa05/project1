@@ -61,11 +61,7 @@ const items = document.querySelectorAll<HTMLLIElement>(".sidebar-item");
             <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-10 items-start">
                 {/* Iframe Section */}
                 <section className="w-full lg:w-2/3" data-aos="fade-up" data-aos-delay="200">
-                    <div
-                        className="relative w-full h-[400px] sm:h-[350px] lg:h-[600px] md:h-[550px] overflow-hidden rounded-lg">
-                        <iframe id="secondFrame" src="/second.html" className="absolute inset-0 w-full h-full border-0"
-                            scrolling="no"></iframe>
-                    </div>
+                        <iframe id="secondFrame" scrolling="no" src="/second.html" className="inset-0 w-full border-0 h-[97vh] bg-blue-400 overflow-hidden"></iframe>
                 </section>
 
                 {/* Sidebar */}

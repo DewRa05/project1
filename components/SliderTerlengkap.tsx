@@ -12,11 +12,12 @@ type CardItem = {
 };
 
 const cards: CardItem[] = [
-  { title: "Atur Jadwal", icon: "/img/sliderLengkap/3.png", desc: "Satu seat untuk semua, tidak ada double booking." },
-  { title: "Proses booking mudah", icon: "/img/sliderLengkap/6.png", desc: "Booking tiket jadi mudah dan cepat tanpa antre." },
-  { title: "Harga tiket fleksibel", icon: "/img/sliderLengkap/5.png", desc: "Harga menyesuaikan kebutuhan dan waktu perjalanan." },
-  { title: "Print tiket akurat", icon: "/img/sliderLengkap/4.png", desc: "Cetak tiket langsung tanpa kesalahan dan cepat." },
-  { title: "Teruji handal", icon: "/img/sliderLengkap/2.png", desc: "Sistem teruji dalam berbagai skenario transportasi." },
+  { title: "Atur Jadwal", icon: "/img/sliderLengkap/atur jadwal.png", desc: "Satu seat untuk semua, tidak ada double booking." },
+  { title: "Proses booking mudah", icon: "/img/sliderLengkap/booking mudah.png", desc: "Booking tiket jadi mudah dan cepat tanpa antre." },
+  { title: "Harga tiket fleksibel", icon: "/img/sliderLengkap/tiket.png", desc: "Harga menyesuaikan kebutuhan dan waktu perjalanan." },
+  { title: "Print tiket akurat", icon: "/img/sliderLengkap/print akurat.png", desc: "Cetak tiket langsung tanpa kesalahan dan cepat." },
+  { title: "Teruji handal", icon: "/img/sliderLengkap/teruji.png", desc: "Sistem teruji dalam berbagai skenario transportasi." },
+  { title: "Pembayaran", icon: "/img/sliderLengkap/payment.png", desc: "Pembayaran cepat dan aman." },
 ];
  
 const SliderTerlengkap = () => {
@@ -45,8 +46,9 @@ const SliderTerlengkap = () => {
               key={index}
               data-aos="fade-up"
               data-aos-delay={index * 100}
-              className="bg-white border border-gray-200 shadow-sm rounded-md p-5 flex flex-col items-start text-left hover:shadow-md transition w-[300px] sm:w-[340px]"
-            >
+              className="bg-wc border border-gray-200 shadow-sm rounded-md p-5 flex flex-col items-start text-left hover:shadow-md transition w-[300px] sm:w-[340px]"
+            >b
+
               <Image
                 src={card.icon}
                 alt={card.title}
