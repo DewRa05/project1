@@ -1,11 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion"; // import framer-motion
+import { motion, AnimatePresence } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const WebTiketing = () => {
   const [tab, setTab] = useState(1);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800, // durasi animasi
+      once: true,    // hanya animasi sekali (biar gak mandiri pas scroll balik)
+      mirror: false, // jangan ulang animasi saat scroll ke atas
+    });
+    AOS.refresh();
+  }, []);
 
   const tabs = [
     {
@@ -55,13 +66,24 @@ const WebTiketing = () => {
   };
 
   return (
-    <section id="4" className="bg-white min-h-screen flex flex-col justify-center items-center px-4 py-10">
-      <h2 className="text-center text-[#01B3BF] text-3xl lg:text-5xl font-extrabold mb-6">
+    <section
+      id="4"
+      className="bg-white min-h-screen flex flex-col justify-center items-center px-4 py-10"
+      data-aos="fade-up"
+    >
+      <h2
+        className="text-center text-[#01B3BF] text-3xl lg:text-5xl font-extrabold mb-6"
+        data-aos="zoom-in"
+      >
         Model Sistem
       </h2>
 
       {/* Tabs */}
-      <div className="w-full max-w-4xl overflow-x-auto scrollbar-hide">
+      <div
+        className="w-full max-w-4xl overflow-x-auto scrollbar-hide"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
         <div className="flex justify-start sm:justify-center gap-6 text-sm sm:text-base font-semibold text-[#888] border-b pb-2 mb-8 min-w-max whitespace-nowrap px-2">
           {tabs.map((item, index) => (
             <span
@@ -81,12 +103,16 @@ const WebTiketing = () => {
       </div>
 
       {/* Konten */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-0 md:gap-0 w-full max-w-6xl px-4">
+      <div
+        className="flex flex-col md:flex-row items-center justify-center gap-0 md:gap-0 w-full max-w-6xl px-4"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
         {/* Gambar dengan animasi */}
         <div className="w-full md:w-1/2 flex justify-center items-center h-[220px] sm:h-[250px] md:h-[300px]">
           <AnimatePresence mode="wait">
             <motion.div
-              key={tab} // key = tab supaya animasi jalan setiap ganti tab
+              key={tab}
               variants={imageVariants}
               initial="hidden"
               animate="visible"
@@ -106,7 +132,11 @@ const WebTiketing = () => {
         </div>
 
         {/* Deskripsi */}
-        <div className="w-full md:w-1/2 text-center md:text-left px-2 sm:px-6">
+        <div
+          className="w-full md:w-1/2 text-center md:text-left px-2 sm:px-6"
+          data-aos="fade-left"
+          data-aos-delay="600"
+        >
           <h3 className="text-[#01B3BF] text-3xl md:text-5xl font-extrabold mb-3 leading-relaxed">
             {currentTab.title}
           </h3>

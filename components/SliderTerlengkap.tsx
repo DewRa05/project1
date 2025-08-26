@@ -18,7 +18,6 @@ const cards: CardItem[] = [
   { title: "Print tiket akurat", icon: "/img/sliderLengkap/print akurat.png", desc: "Cetak tiket langsung tanpa kesalahan dan cepat." },
   { title: "Teruji handal", icon: "/img/sliderLengkap/teruji.png", desc: "Sistem teruji dalam berbagai skenario transportasi." },
   { title: "Pembayaran", icon: "/img/sliderLengkap/payment.png", desc: "Pembayaran cepat dan aman." },
-  { title: "Pembayaran", icon: "/img/sliderLengkap/payment[1].png", desc: "Pembayaran cepat dan aman." },
 ];
  
 const SliderTerlengkap = () => {
@@ -48,7 +47,7 @@ const SliderTerlengkap = () => {
               data-aos="fade-up"
               data-aos-delay={index * 100}
               className="bg-wc border border-gray-200 shadow-sm rounded-md p-5 flex flex-col items-start text-left hover:shadow-md transition w-[300px] sm:w-[340px]"
-            >b
+            >
 
               <Image
                 src={card.icon}
