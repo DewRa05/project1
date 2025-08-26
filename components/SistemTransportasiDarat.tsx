@@ -43,7 +43,6 @@ const SistemTransportasiDarat = () => {
         >
           <div className="w-[350px] sm:w-[350px] md:w-[500px] lg:w-[500px] floating">
             <Image
-              src="/img/intro/intro3.png"
               src="/img/intro/IMG2[1].png"
               alt="Sistem Transportasi"
               width={800}
